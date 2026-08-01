@@ -5,7 +5,7 @@ theme with a few custom interactive touches: a 3D-tilt profile photo with a
 cursor-following glare, a typewriter-style role cycler in the hero, and
 image galleries on each project's detail page.
 
-**Live site:** [add your Vercel URL here once deployed]
+**Live site:** [https://portofolio-nu-lime.vercel.app/]
 
 ## Features
 
