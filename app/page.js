@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { Github, Mail } from "lucide-react";
+import { Github, Mail, Download } from "lucide-react";
 import { COLORS } from "../lib/theme";
 import { projects } from "../lib/projects";
 
@@ -290,7 +290,7 @@ export default function Portfolio() {
           <p style={{ fontSize: 16, lineHeight: 1.7, color: COLORS.textMuted, marginTop: 22, maxWidth: 480 }}>
             A web developer who loves building things end to end — PHP/MySQL on the backend, Next.js on the front. Recent work includes a thesis-grade AHP/SAW decision engine and n8n workflows that run themselves. I pick up new tools fast, work well in a team, and I'm just as happy shipping a clean UI as I am solving the logic behind it.
           </p>
-          <div style={{ display: "flex", gap: 14, marginTop: 32 }}>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 14, marginTop: 32 }}>
             <Link
               href="/projects"
               style={{
@@ -320,6 +320,23 @@ export default function Portfolio() {
             >
               Get in touch
             </button>
+            <a
+              href="/cv_farand.pdf"
+              download="CV-Farand-Arja-Kurniawan.pdf"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 8,
+                background: "transparent",
+                color: COLORS.text,
+                border: `1px solid ${COLORS.borderStrong}`,
+                padding: "12px 22px",
+                fontSize: 14,
+                textDecoration: "none",
+              }}
+            >
+              <Download size={16} strokeWidth={1.5} /> Download CV
+            </a>
           </div>
         </div>
 
